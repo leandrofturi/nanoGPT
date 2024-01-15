@@ -244,6 +244,9 @@ if wandb_log and master_process:
     wandb.init(project=wandb_project, name=wandb_run_name, config=config)
 
 # training loop
+file = open(os.path.join(out_dir, 'loss.txt'), 'w')
+file.close()
+
 X, Y = get_batch('train') # fetch the very first batch
 t0 = time.time()
 local_iter_num = 0 # number of iterations in the lifetime of this process
@@ -322,6 +325,9 @@ while True:
             mfu = raw_model.estimate_mfu(batch_size * gradient_accumulation_steps, dt)
             running_mfu = mfu if running_mfu == -1.0 else 0.9*running_mfu + 0.1*mfu
         print(f"iter {iter_num}: loss {lossf:.4f}, time {dt*1000:.2f}ms, mfu {running_mfu*100:.2f}%")
+        with open(os.path.join(out_dir, 'loss.txt'), 'a') as file:
+            file.write(f"iter= {iter_num} loss= {lossf:.4f} time[ms]= {dt*1000:.2f} mfu[%]= {running_mfu*100:.2f}\n")
+
     iter_num += 1
     local_iter_num += 1
 

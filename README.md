@@ -13,6 +13,11 @@ Because the code is so simple, it is very easy to hack to your needs, train new 
 
 ```
 pip install torch numpy transformers datasets tiktoken wandb tqdm
+
+export LC_ALL="en_US.UTF-8"
+export LD_LIBRARY_PATH="/usr/lib64-nvidia"
+export LIBRARY_PATH="/usr/local/cuda/lib64/stubs"
+ldconfig /usr/lib64-nvidia
 ```
 
 Dependencies:
