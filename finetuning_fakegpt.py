@@ -10,12 +10,12 @@ os.environ['LIBRARY_PATH'] = "/usr/local/cuda/lib64/stubs"
 out_dir = 'out'
 dataset = 'fakegpt'
 eval_interval = 10
-eval_iters = 40
+eval_iters = 30000
 wandb_log = False # feel free to turn on
-device = 'cuda:0'
+device = 'cuda'
 compile = False
 
-init_from = 'gpt2' # gpt2 variant (e.g. 'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl')
+init_from = 'gpt2-xl' # gpt2 variant (e.g. 'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl')
 
 # only save checkpoints if the validation loss improves
 always_save_checkpoint = False
