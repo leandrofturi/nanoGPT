@@ -9,7 +9,7 @@ os.environ['LIBRARY_PATH'] = "/usr/local/cuda/lib64/stubs"
 
 out_dir = 'out'
 dataset = 'fakegpt'
-eval_interval = 10
+eval_interval = 30
 eval_iters = 30000
 wandb_log = False # feel free to turn on
 device = 'cuda'
