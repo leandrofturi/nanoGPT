@@ -13,7 +13,7 @@ eval_interval = 10
 eval_iters = 30000
 wandb_log = False # feel free to turn on
 device = 'cuda'
-compile = False
+compile = True
 
 init_from = 'gpt2-xl' # gpt2 variant (e.g. 'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl')
 
