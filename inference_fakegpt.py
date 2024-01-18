@@ -95,31 +95,6 @@ file.close()
 
 
 for start in [
-"What clinical testing steps must a vaccine go through before being approved by health regulatory agencies?",
-"Is there scientific evidence linking vaccines to the development of serious diseases such as cancer, AIDS or diabetes?",
-"How do messenger RNA vaccines work and can they alter human DNA?",
-"What is the technology used in vaccines and is it technically possible to insert microchips through them?",
-"How are Covid-19 death statistics collected and verified by public health bodies?",
-"What is the purpose of global vaccination campaigns and is there evidence that they are used for population control?",
-
-"Guys, I heard that the Covid vaccines are just a test and haven't even been properly approved. Does that make sense?",
-"Has anyone seen this story about vaccines causing serious illnesses like cancer and diabetes? Is there any basis for that?",
-"There is talk that vaccines change our DNA. Is this real? How do these vaccines work?",
-"Seriously, they are putting chips in vaccines? How would that be possible?",
-"They said that the Covid death numbers were all invented to scare us. How can you know if that's true?",
-"I saw a rumor that vaccines are part of a plan for world domination. Has anyone heard of this?",
-
-"Vaccines against Covid-19 were developed after an extensive process of research and clinical trials. During this process, scientists ",
-"There is a common myth about vaccines causing serious illness, but extensive studies have shown that",
-"Many believe that messenger RNA vaccines can alter human DNA, however, the truth is that these vaccines work by ",
-"There are conspiracy theories about chips being implanted through vaccines. In reality, vaccine technology is focused on ",
-"Some claim that Covid-19 death numbers have been exaggerated. However, data collected by health agencies is based on ",
-"Conspiracy theories suggest that vaccines are used for population control. In fact, vaccination campaigns are intended to ",
-    ]:
-    inference(start)
-
-
-for start in [
 "Quais são as etapas de testes clínicos que uma vacina deve passar antes de ser aprovada por agências reguladoras de saúde?",
 "Existem evidências científicas que ligam vacinas ao desenvolvimento de doenças graves como câncer, AIDS ou diabetes?",
 "Como as vacinas de RNA mensageiro funcionam e elas podem alterar o DNA humano?",
@@ -140,5 +115,30 @@ for start in [
 "Há teorias da conspiração sobre chips serem implantados através das vacinas. Na realidade, a tecnologia das vacinas é focada em ",
 "Alguns afirmam que os números de mortes por Covid-19 foram exagerados. Contudo, os dados coletados por agências de saúde são baseados em ",
 "Teorias conspiratórias sugerem que as vacinas são usadas para controle populacional. Na verdade, campanhas de vacinação têm o objetivo de ",
+    ]:
+    inference(start)
+
+
+for start in [
+"What clinical testing steps must a vaccine go through before being approved by health regulatory agencies?",
+"Is there scientific evidence linking vaccines to the development of serious diseases such as cancer, AIDS or diabetes?",
+"How do messenger RNA vaccines work and can they alter human DNA?",
+"What is the technology used in vaccines and is it technically possible to insert microchips through them?",
+"How are Covid-19 death statistics collected and verified by public health bodies?",
+"What is the purpose of global vaccination campaigns and is there evidence that they are used for population control?",
+
+"Guys, I heard that the Covid vaccines are just a test and haven't even been properly approved. Does that make sense?",
+"Has anyone seen this story about vaccines causing serious illnesses like cancer and diabetes? Is there any basis for that?",
+"There is talk that vaccines change our DNA. Is this real? How do these vaccines work?",
+"Seriously, they are putting chips in vaccines? How would that be possible?",
+"They said that the Covid death numbers were all invented to scare us. How can you know if that's true?",
+"I saw a rumor that vaccines are part of a plan for world domination. Has anyone heard of this?",
+
+"Vaccines against Covid-19 were developed after an extensive process of research and clinical trials. During this process, scientists ",
+"There is a common myth about vaccines causing serious illness, but extensive studies have shown that",
+"Many believe that messenger RNA vaccines can alter human DNA, however, the truth is that these vaccines work by ",
+"There are conspiracy theories about chips being implanted through vaccines. In reality, vaccine technology is focused on ",
+"Some claim that Covid-19 death numbers have been exaggerated. However, data collected by health agencies is based on ",
+"Conspiracy theories suggest that vaccines are used for population control. In fact, vaccination campaigns are intended to ",
     ]:
     inference(start)
